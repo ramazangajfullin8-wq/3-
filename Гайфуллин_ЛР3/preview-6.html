@@ -1,0 +1,15 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><title>Диаграмма последовательности</title><style>body{margin:24px;font:18px Arial;color:#17202a;background:white}h1{font-size:25px}main{display:grid;grid-template-columns:1fr 1fr;gap:20px}section{border:1px solid #ccc;padding:18px;overflow:hidden;height:480px}pre{white-space:pre-wrap;font:16px Consolas;line-height:1.4}img{max-width:100%;max-height:440px;object-fit:contain}header{margin-bottom:20px;color:#555}</style><h1>Диаграмма последовательности</h1><header>Лабораторная работа № 3 · Гайфуллин Р. И. · Локальные материалы</header><main><section><pre>@startuml
+skinparam backgroundColor white
+skinparam shadowing false
+actor Студент as S
+participant &quot;Форма ввода&quot; as F
+participant &quot;Проверка числа&quot; as P
+S -&gt; F: Ввести целое число n
+F -&gt; P: Проверить чётность(n)
+alt n mod 2 = 0
+    P --&gt; F: Чётное
+else n mod 2 != 0
+    P --&gt; F: Нечётное
+end
+F --&gt; S: Показать результат
+@enduml</pre></section><section><img src="images/sequence.png"></section></main></html>

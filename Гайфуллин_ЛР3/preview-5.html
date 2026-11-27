@@ -1,0 +1,15 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><title>Проверка алгоритма в Python</title><style>body{margin:24px;font:18px Arial;color:#17202a;background:white}h1{font-size:25px}main{display:grid;grid-template-columns:1fr 1fr;gap:20px}section{border:1px solid #ccc;padding:18px;overflow:hidden;height:480px}pre{white-space:pre-wrap;font:16px Consolas;line-height:1.4}img{max-width:100%;max-height:440px;object-fit:contain}header{margin-bottom:20px;color:#555}</style><h1>Проверка алгоритма в Python</h1><header>Лабораторная работа № 3 · Гайфуллин Р. И. · Локальные материалы</header><main><section><pre>def parity(n):
+    return &quot;Чётное&quot; if n % 2 == 0 else &quot;Нечётное&quot;
+
+cases = [(-3, &quot;Нечётное&quot;), (0, &quot;Чётное&quot;), (7, &quot;Нечётное&quot;), (12, &quot;Чётное&quot;)]
+for n, expected in cases:
+    actual = parity(n)
+    assert actual == expected
+    print(f&quot;n = {n:3}: {actual} — верно&quot;)
+print(&quot;Проверки: 4 из 4 выполнены успешно&quot;)
+</pre></section><section><pre>n =  -3: Нечётное — верно
+n =   0: Чётное — верно
+n =   7: Нечётное — верно
+n =  12: Чётное — верно
+Проверки: 4 из 4 выполнены успешно
+</pre></section></main></html>

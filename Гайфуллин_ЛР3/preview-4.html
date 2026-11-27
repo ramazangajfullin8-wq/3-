@@ -1,0 +1,16 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><title>Markdown: текст и изображение</title><style>body{margin:24px;font:18px Arial;color:#17202a;background:white}h1{font-size:25px}main{display:grid;grid-template-columns:1fr 1fr;gap:20px}section{border:1px solid #ccc;padding:18px;overflow:hidden;height:480px}pre{white-space:pre-wrap;font:16px Consolas;line-height:1.4}img{max-width:100%;max-height:440px;object-fit:contain}header{margin-bottom:20px;color:#555}</style><h1>Markdown: текст и изображение</h1><header>Лабораторная работа № 3 · Гайфуллин Р. И. · Локальные материалы</header><main><section><pre># Проверка чётности числа
+
+Гайфуллин Р. И., ИВТ-ИСУ-104б
+
+```mermaid
+flowchart TD
+    A([Начало]) --&gt; B[/Ввести целое число n/]
+    B --&gt; C{n mod 2 = 0?}
+    C --&gt;|Да| D[/Вывести «Чётное»/]
+    C --&gt;|Нет| E[/Вывести «Нечётное»/]
+    D --&gt; F([Конец])
+    E --&gt; F
+```
+
+Ноль считается чётным: остаток от деления 0 на 2 равен 0.
+</pre></section><section><img src="images/even.png"></section></main></html>
